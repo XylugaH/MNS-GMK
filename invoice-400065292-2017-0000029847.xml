@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issuance xmlns="http://www.w3schools.com" sender="400065292">
+	<general>
+		<number>400065292-2017-0000029847</number>
+		<dateIssuance>2017-05-29</dateIssuance>
+		<dateTransaction>2017-05-21</dateTransaction>
+		<documentType>ORIGINAL</documentType>
+	</general>
+	<provider>
+		<providerStatus>SELLER</providerStatus>
+		<dependentPerson>false</dependentPerson>
+		<residentsOfOffshore>false</residentsOfOffshore>
+		<specialDealGoods>false</specialDealGoods>
+		<bigCompany>false</bigCompany>
+		<countryCode>112</countryCode>
+		<unp>400065292</unp>
+		<name>Петриковское районное потребительское общество</name>
+		<address>247940, Петриков, Бумажкова, дом № 3 </address>
+	</provider>
+	<recipient>
+		<recipientStatus>CUSTOMER</recipientStatus>
+		<dependentPerson>false</dependentPerson>
+		<residentsOfOffshore>false</residentsOfOffshore>
+		<specialDealGoods>false</specialDealGoods>
+		<bigCompany>false</bigCompany>
+		<countryCode>112</countryCode>
+		<unp>400071722</unp>
+		<name>маг.14 АПФК"Жлобинский мясокомбинат"г.Петриков К.Маркса 3</name>
+		<address>маг. 14 г. Петриков ул.К.Маркса 3</address>
+	</recipient>
+	<senderReceiver>
+		<consignors>
+			<consignor>
+				<countryCode>112</countryCode>
+				<unp>400065292</unp>
+				<name>Петриковское районное потребительское общество</name>
+				<address>247940, Петриков, Бумажкова, дом № 3</address>
+			</consignor>
+		</consignors>
+		<consignees>
+			<consignee>
+				<countryCode>112</countryCode>
+				<unp>400071722</unp>
+				<name>маг.14 АПФК"Жлобинский мясокомбинат"г.Петриков К.Маркса 3</name>
+				<address>маг. 14 г. Петриков ул.К.Маркса 3</address>
+			</consignee>
+		</consignees>
+	</senderReceiver>
+	<deliveryCondition>
+		<contract>
+			<number>5</number>
+			<date>2017-01-25</date>
+			<documents>
+				<document>
+					<docType>
+						<code>603</code>
+					</docType>
+					<date>2017-05-21</date>
+					<blankCode>402861</blankCode>
+					<seria>ЭЯ</seria>
+					<number>2493151</number>
+				</document>
+			</documents>
+		</contract>
+	</deliveryCondition>
+	<roster totalCostVat="22.18" totalExcise="0" totalVat="2.03" totalCost="20.15">
+		<rosterItem>
+			<number>0</number>
+			<name>ХЛЕБ ВЕРАСНЕВСКИЙ 0.82</name>
+			<code>1905903000</code>
+			<units>796</units>
+			<count>10</count>
+			<price>0.75</price>
+			<cost>7.5</cost>
+			<summaExcise>0</summaExcise>
+			<vat>
+				<rate>10</rate>
+				<rateType>DECIMAL</rateType>
+				<summaVat>0.75</summaVat>
+			</vat>
+			<costVat>8.25</costVat>
+			<descriptions>
+				<description>DEDUCTION_IN_FULL</description>
+			</descriptions>
+		</rosterItem>
+		<rosterItem>
+			<number>1</number>
+			<name>БАТОН СОЛНЫШКО 0.5 ВС</name>
+			<code>1905906000</code>
+			<units>796</units>
+			<count>5</count>
+			<price>0.87</price>
+			<cost>4.35</cost>
+			<summaExcise>0</summaExcise>
+			<vat>
+				<rate>10</rate>
+				<rateType>DECIMAL</rateType>
+				<summaVat>0.44</summaVat>
+			</vat>
+			<costVat>4.79</costVat>
+			<descriptions>
+				<description>DEDUCTION_IN_FULL</description>
+			</descriptions>
+		</rosterItem>
+		<rosterItem>
+			<number>2</number>
+			<name>БАТОН СОЛНЫШКО 0.5 ВС НАР</name>
+			<code>1905906000</code>
+			<units>796</units>
+			<count>5</count>
+			<price>0.93</price>
+			<cost>4.65</cost>
+			<summaExcise>0</summaExcise>
+			<vat>
+				<rate>10</rate>
+				<rateType>DECIMAL</rateType>
+				<summaVat>0.47</summaVat>
+			</vat>
+			<costVat>5.12</costVat>
+			<descriptions>
+				<description>DEDUCTION_IN_FULL</description>
+			</descriptions>
+		</rosterItem>
+		<rosterItem>
+			<number>3</number>
+			<name>БАТОН ЕВРОПЕЙСКИЙ 0.4 НАР</name>
+			<code>1905906000</code>
+			<units>796</units>
+			<count>5</count>
+			<price>0.73</price>
+			<cost>3.65</cost>
+			<summaExcise>0</summaExcise>
+			<vat>
+				<rate>10</rate>
+				<rateType>DECIMAL</rateType>
+				<summaVat>0.37</summaVat>
+			</vat>
+			<costVat>4.02</costVat>
+			<descriptions>
+				<description>DEDUCTION_IN_FULL</description>
+			</descriptions>
+		</rosterItem>
+	</roster>
+</issuance>

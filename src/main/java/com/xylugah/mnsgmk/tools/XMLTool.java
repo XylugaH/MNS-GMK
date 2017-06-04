@@ -15,7 +15,7 @@ public class XMLTool{
 		super();
 	}
 
-	public boolean marshal(final File file, final Class<?> product) throws JAXBException{
+	public boolean marshal(final File file, final Issuance product) throws JAXBException{
 		
 		JAXBContext jaxbContext = JAXBContext.newInstance(Issuance.class);
 		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();

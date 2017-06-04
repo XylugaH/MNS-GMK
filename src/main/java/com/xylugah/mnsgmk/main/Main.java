@@ -1,6 +1,7 @@
 package com.xylugah.mnsgmk.main;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.bind.JAXBException;
@@ -18,37 +19,39 @@ public class Main {
 	private final static Logger logger = Logger.getLogger(Main.class);
 
 	public static void main(String[] args) {
-		FileFinder finder = new FileFinder();
-		try {
-			File[] files = finder.getFileList("c:\\", ".prg");
-			for (File file : files) {
-				System.out.println(file.getAbsolutePath());
-			}
 
-		} catch (GlobalException e) {
-			logger.error(e.getMessage(), e);
+		File[] files = getFiles();
+		
+		XMLTool tool = new XMLTool();
+
+		List<Issuance> issuances = new ArrayList<>();
+		try {
+			for (File file : files) {
+				Issuance issuance = (Issuance) tool.unMarshal(file);
+				issuances.add(issuance);
+			}
+		} catch (JAXBException e) {
 			e.printStackTrace();
 		}
 
-		XMLTool tool = new XMLTool();
-/*		try {
-			Product product = new Product("","","","");
-			tool.marshal(new File("C:\\file.xml"), product);
+	/*	try {
+			tool.marshal(new File("C:\\file.xml"), p);
 		} catch (JAXBException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}*/
-		
+
+	}
+
+	public static File[] getFiles() {
+		FileFinder finder = new FileFinder();
+		File[] files = null;
 		try {
-			Issuance p = (Issuance) tool.unMarshal(new File("C:\\invoice-400065292-2017-0000029847.xml"));
-			List<RosterItem> rosterItem = p.getRoster().getRosterItem();
-			for (RosterItem rosterItem2 : rosterItem) {
-				System.out.println(rosterItem2.getCost());
-			}
-		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
+			files = finder.getFileList("c:\\", ".xml");
+		} catch (GlobalException e) {
+			logger.error(e.getMessage(), e);
 			e.printStackTrace();
 		}
-
+		return files;
 	}
 }
